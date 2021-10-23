@@ -1,8 +1,11 @@
 ---
-title: "1. Une boite à outils pour le data scientist"
+title: "Une boite à outils pour le data scientist"
 author: "Cédric Bohnert"
 date: "23/10/2021"
-output: pdf_document
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
 ---
 
 ```{r setup, include=FALSE}
