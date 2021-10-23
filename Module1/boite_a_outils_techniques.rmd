@@ -1,0 +1,120 @@
+---
+title: "Une boite à outils techniques pour le data scientist"
+author: "Cédric Bohnert"
+date: "23/10/2021"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Utiliser la CLI (interface de ligne de commande) Linux
+
+Connaitre les bases de l'utilisation de la ligne de commande est nécessaire au data scientist pour installer des programmes et pour gérer une structure de fichiers.
+
+#### Quelques commandes pour installer des programmes :
+
+* `sudo` = confie les droits d'execution, de lecture et d'écriture à l'utilisateur courant (demande son mot de passe administrateur)
+* `apt-get install` = télécharge et installe un package d'un dépot distant
+* `apt-get update` = met à jour tous les dépots 
+* `apt-get upgrade` = met à jour tous les packages de l'utilisateur courant
+
+#### Exemple : installer le système R au complet :
+
+* `sudo apt-get update`
+* `sudo apt-get install r-base`
+
+#### Quelques commandes de gestion de fichiers à connaitre :
+
+* `/` = dossier racine
+* `~` = dossier utilisateur courant
+* `pwd` = affiche le nom du dossier courant
+* `clear` = efface l'affichage de la console
+* `ls` = liste les éléments du répertoire courant
+    *  `-a` = voir tous les éléments, y compris cachés
+    *  `-l` = ajoute les détails
+* `cd` = change de dossier
+* `mkdir` = crée un nouveau dossier
+* `touch` = crée un fichier vide
+* `cp` = copie un fichier
+    * `cp <file> <directory>` = copie un fichier dans un dossier
+    * `cp -r <directory> <newDirectory>` = copie tous les éléments d'un dossier dans un nouveau dossier
+            
+              * `-r` = recursive (copie récursive)
+* `rm` = efface un fichier
+    * `-r` = efface un dossier et tout son contenu
+* `mv` = déplace un fichier
+    * `move <file> <directory>` = déplace un fichier dans un dossier
+    * `move <fileName> <newName>` = renomme le fichier
+* `echo` = affiche l'argument/les variables données
+* `date` = affiche la date courante
+
+#### Quelques exemples :
+
+* Création d'un nouveau script R dans un dossier spécifique :
+    * `cd ~/Datascience/Projet1/`
+    * `touch mon_script.R`
+* Copie d'un fichier téléchargé dans un dossier utilisateur nouvellement créé :
+    * `mkdir ~/Documents/Projet`
+    * `cp ~/Téléchargements/mon_fichier_téléchargé ~/Documents/Projet/`
+* Suppression du dossier Téléchargements_temporaires et de tous ses éléments :
+    * `rm -r ~/Téléchargements_temporaires`
+* Affichage de du nom d'utilisateur courant :
+    * `echo $USER`
+* Affichage des dossiers bibliothèques R installées dans le système (dépend du système) :
+    * `ls -la R/x86_64-pc-linux-gnu-library/4.1`
+
+#### Pour approfondir :
+    
+De très très nombreuses opérations peuvent se réaliser en ligne de commande, voir les ressources ci-dessous :
+
+* [Introduction à la ligne de commande](https://fr.flossmanuals.net/introduction-a-la-ligne-de-commande/introduction/)
+* [La ligne de commande sous Ubuntu](https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande)
+* [Les meilleurs cours et tutoriels pour apprendre le système Linux](https://linux.developpez.com/cours/?page=Programmation#Shell)
+
+# Utiliser git et GitHub
+
+Git est un outil de contrôle de version et Github est une interface ainsi qu'un espace de stockage pour projets de développement très utilisé dans le monde de la data science.
+
+#### Séquence de travail :
+
+1. Effectuer des modifications dans l'espace de travail (script, markdown, etc)
+2. Mettre à jour / sauvegarder les modifications
+3. Effectuer un 'commit' dans le dossier local
+4. Effectuer un 'push' dans le dépot distant
+    
+#### Commandes courantes :
+    
+* `git add .` = ajoute tous les nouveaux fichiers à suivre
+* `git add -u` = met à jour les suivivs pour les fichiers renommés ou effacés
+* `git add -A` = réalise les deux opérations précédentes
+    * notez que `add` est réalisé avant tout 'commit'
+* `git commit -m "message"` = 'commit' les modifications que vous voulez sauvegarder dans la copie locale
+* `git checkout -b branchname` = crée une nouvelle branche
+* `git branch` = informe l'utilisateur sur la branche de travail courante
+* `git checkout master` = retourne sur la branche maitresse
+* `git pull` = fusionne les modifications dans les branches/dépot de l'utilisateur propriétaire
+* `git push` = 'commit' les modifications locales dans le dépot distant (GitHub)
+
+#### Pour approfondir :
+
+* [git - un petit guide](https://rogerdudler.github.io/git-guide/index.fr.html)
+* [git Pro - un livre](https://git-scm.com/book/fr/v2)
+
+
+On pourrait élaborer un TP pour appliquer ces compétences en créant par exemple une structure de projet concernant :
+
+* L'organisation de l'étude de ce cours (prise de notes, resssources, scripts, visualisations, etc.)
+* Un template d'un projet type de data science (liste de tâches, liste de questions, scripts, jeux de données, visualisations, etc.)
+
+et la stocker dans un dépot GitHub. 
+
+# Utiliser Markdown
+
+* `##` = signifies secondary heading (bold big font)
+* `###` = signifies tertiary heading (slightly smaller font than secondary, not bold)
+* `*` = bullet list item
