@@ -9,3 +9,68 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Utiliser la CLI (interface de ligne de commande) Linux
+
+Connaitre les bases de l'utilisation de la ligne de commande est nécessaire au data scientist pour installer des programmes et pour gérer une structure de fichiers.
+
+### Quelques commandes pour installer des programmes :
+
+* `sudo` = confie les droits d'execution, de lecture et d'écriture à l'utilisateur courant (demande son mot de passe administrateur)
+* `apt-get install` = télécharge et installe un package d'un dépot distant
+* `apt-get update` = met à jour tous les dépots 
+* `apt-get upgrade` = met à jour tous les packages de l'utilisateur courant
+
+#### Exemple : installer le système R au complet :
+
+* `sudo apt-get update`
+* `sudo apt-get install r-base`
+
+### Quelques commandes de gestion de fichiers à connaitre :
+
+* `/` = dossier racine
+* `~` = dossier utilisateur courant
+* `pwd` = affiche le nom du dossier courant
+* `clear` = efface l'affichage de la console
+* `ls` = liste les éléments du répertoire courant
+    *  `-a` = voir tous les éléments, y compris cachés
+    *  `-l` = ajoute les détails
+* `cd` = change de dossier
+* `mkdir` = crée un nouveau dossier
+* `touch` = crée un fichier vide
+* `cp` = copie un fichier
+    * `cp <file> <directory>` = copie un fichier dans un dossier
+    * `cp -r <directory> <newDirectory>` = copie tous les éléments d'un dossier dans un nouveau dossier
+            
+              * `-r` = recursive (copie récursive)
+* `rm` = efface un fichier
+    * `-r` = efface un dossier et tout son contenu
+* `mv` = déplace un fichier
+    * `move <file> <directory>` = déplace un fichier dans un dossier
+    * `move <fileName> <newName>` = renomme le fichier
+* `echo` = affiche l'argument/les variables données
+* `date` = affiche la date courante
+
+#### Quelques exemples :
+
+* Création d'un nouveau script R dans un dossier spécifique :
+    * `cd ~/Datascience/Projet1/`
+    * `touch mon_script.R`
+* Copie d'un fichier téléchargé dans un dossier utilisateur nouvellement créé :
+    * `mkdir ~/Documents/Projet`
+    * `cp ~/Téléchargements/mon_fichier_téléchargé ~/Documents/Projet/`
+* Suppression du dossier Téléchargements_temporaires et de tous ses éléments :
+    * `rm -r ~/Téléchargements_temporaires`
+* Affichage de du nom d'utilisateur courant :
+    * `echo $USER`
+* Affichage des dossiers bibliothèques R installées dans le système (dépend du système) :
+    * `ls -la R/x86_64-pc-linux-gnu-library/4.1`
+
+### Quelques ressources pour approfondir :
+    
+De très très nombreuses opérations peuvent se réaliser en ligne de commande, voir les ressources ci-dessous :
+
+* [Introduction à la ligne de commande](https://fr.flossmanuals.net/introduction-a-la-ligne-de-commande/introduction/)
+* [La ligne de commande sous Ubuntu](https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande)
+* [Les meilleurs cours et tutoriels pour apprendre le système Linux](https://linux.developpez.com/cours/?page=Programmation#Shell)
+
+
