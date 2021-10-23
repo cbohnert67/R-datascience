@@ -73,4 +73,38 @@ De très très nombreuses opérations peuvent se réaliser en ligne de commande,
 * [La ligne de commande sous Ubuntu](https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande)
 * [Les meilleurs cours et tutoriels pour apprendre le système Linux](https://linux.developpez.com/cours/?page=Programmation#Shell)
 
+# Utiliser git et GitHub
 
+Git est un outil de contrôle de version et Github est une interface ainsi qu'un espace de stockage pour projets de développement très utilisé dans le monde de la data science.
+
+## Séquence de travail :
+
+1. Effectuer des modifications dans l'espace de travail (script, markdown, etc)
+2. Mettre à jour / sauvegarder les modifications
+3. Effectuer un 'commit' dans le dossier local
+4. Effectuer un 'push' dans le dépot distant
+    
+## Commandes courantes :
+    
+* `git add .` = ajoute tous les nouveaux fichiers à suivre
+* `git add -u` = met à jour les suivivs pour les fichiers renommés ou effacés
+* `git add -A` = réalise les deux opérations précédentes
+    * notez que `add` est réalisé avant tout 'commit'
+* `git commit -m "message"` = 'commit' les modifications que vous voulez sauvegarder dans la copie locale
+* `git checkout -b branchname` = crée une nouvelle branche
+* `git branch` = informe l'utilisateur sur la branche de travail courante
+* `git checkout master` = retourne sur la branche maitresse
+* `git pull` = fusionne les modifications dans les branches/dépot de l'utilisateur propriétaire
+* `git push` = 'commit' les modifications locales dans le dépot distant (GitHub)
+
+## Pour approfondir :
+
+* [git - un petit guide](https://rogerdudler.github.io/git-guide/index.fr.html)
+* [git Pro - un livre](https://git-scm.com/book/fr/v2)
+
+
+# Utiliser Markdown
+
+* `##` = signifies secondary heading (bold big font)
+* `###` = signifies tertiary heading (slightly smaller font than secondary, not bold)
+* `*` = bullet list item
