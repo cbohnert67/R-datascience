@@ -2,5 +2,6 @@
 
 Une série de notes pour se spécialiser en datascience avec R. 
 
-
-[1. Une boite à outils pour le data scientist.](1.boite_a_outils.pdf)
+1. Module 1
+* [Une boite à outils techniques pour le data scientist.](boite_a_outils_techniques.pdf)
+* [La data science : quesaco ?](datascience_quesaco.pdf)
