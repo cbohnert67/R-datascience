@@ -3,9 +3,9 @@ title: 'La data science : quésaco ?'
 author: "Cédric Bohnert"
 date: "23/10/2021"
 output:
+  pdf_document: default
   html_document:
     df_print: paged
-  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
