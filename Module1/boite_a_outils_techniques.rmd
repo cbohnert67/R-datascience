@@ -140,6 +140,29 @@ et la stocker dans un dépot GitHub.
 
 # Utiliser Markdown
 
-* `##` = signifies secondary heading (bold big font)
-* `###` = signifies tertiary heading (slightly smaller font than secondary, not bold)
-* `*` = bullet list item
+RMarkdown est un outil permettant de créer des documents reproductibles.
+
+Un document reproductible est un document combinant texte et du code que l'on peut aisement partager et en reproduire les résultats du projet.
+
+#### Structure d'un document RMarkdown :
+
+* Header : titre, date, auteur
+* Text : des sections de texte
+* Code chunks : des bouts de code
+
+Un document RMarkdown peut être converti en fichier pdf et html.
+
+#### Markdown :
+
+* `#` = Titre de niveau 1
+* `##` = Titre de niveau 2
+* ...
+* `######` = Titre de niveau 6
+* `**gras**` = mot en gras
+* `*italique*` = mot en italique 
+* `*` = item de liste
+* ...
+
+#### Pour approfondir :
+
+* [Guide Markdown](https://www.markdownguide.org/)
