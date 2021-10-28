@@ -3,9 +3,9 @@ title: "Une boite à outils techniques pour le data scientist"
 author: "Cédric Bohnert"
 date: "23/10/2021"
 output:
-  pdf_document: default
   html_document:
     df_print: paged
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -79,6 +79,31 @@ De très très nombreuses opérations peuvent se réaliser en ligne de commande,
 # Utiliser git et GitHub
 
 Git est un outil de contrôle de version et Github est une interface ainsi qu'un espace de stockage pour projets de développement très utilisé dans le monde de la data science.
+
+Un outil de contrôle de version est un programme qui permet de travailler sur une seule copie de fichier.
+
+Lorsqu'on fait des changements sur un fichier, le système sauvegarde l'historique des changements et permet de revenir sur une modifications.
+
+
+#### Vocabulaire :
+
+* Un dépot est une espace de stockage en ligne dans lequel on place les fichiers du projet
+* Un 'commit' est une sauvegarde à un instant t (comme une photographie) d'un fichier ou d'un ensemble de fichiers accompagné d'un message
+* Un 'push' est une mise à jour du dépot distant : les fichiers sont envoyés sur le dépot après avoir fait un commit
+* Un 'pull' est une mise à jour des fichiers locaux à partir de ceux du dépot
+* Une branche est une copie différente des fichiers d'un dépot
+* Un 'merge' est une fusion d'une branche et le dépot principal
+* Un conflit survient lorsque plusieurs personnes ont édités un fichier et souhaitent le fusionner avec le dépôt principal
+* un clone est une copie locale d'un dépot : lorsqu'on on commence à travailler sur un projet existant, on commence par cloner le dépot
+* un 'fork' est une copie personnelle d'un projet d'une autre personne
+
+#### Bonne pratiques :
+
+* Faire un seul commit par problème rencontré dans le projet
+* Bien renseigner les commit
+* Puller et pusher souvent
+
+
 
 #### Séquence de travail :
 
