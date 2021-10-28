@@ -38,7 +38,18 @@ Un travail a été réalisé dans ce sens par Maurice de Kunder sur l'estimation
 * [www.worldwidewebsize.com](https://www.worldwidewebsize.com/)
 * [Estimating search engine index size variability: a 9-year longitudinal study](www_size_estimation_method.pdf)
 
-On pourrait tenter de comprendre ce travail tout en réalisant un TD ou TP pour y extraire un succint aperçu de la méthodologie de l'étude scientifique. 
+On pourrait tenter de comprendre ce travail tout en réalisant un TD ou TP pour y extraire un succint aperçu de la méthodologie d'une étude utilisant des données.
+
+Un projet d'étude en data science se décompose en les étapes suivantes :
+
+* Formuler une question est le point de départ (d'autres questions surviennent dans les étapes ultérieures).
+* Trouver ou générer les données que l'on va utiliser pour répondre à la question.
+* L'analyse des données, pour répondre à la question, se fait en explorant le jeu de données et en modélisant les données.
+* Tirer des conclusions de cette analyse et les communiquer font partie de la dernière étape du projet.
+
+
+Le point essentiel à retenir est qu'un projet en data science commence par une question que l'on cherche à répondre grâce aux données.
+
 
 # Dans data science, il y a le mot science !
 
