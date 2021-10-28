@@ -160,6 +160,19 @@ Voici 5 exemples de questions que l'on peut se poser avec ce jeu de données :
 
 *A vous de jouer !* Formuler 5 questions auxquelles on pourrait répondre grâce à ce jeu de données new yorkais.
 
+#### Différentes catégories de questions :
+
+* Analyse descriptive pour décrire et résumer un ensemble de données
+* Analyse exploratoire pour examiner les données et exhiber des relations non déjà connues
+* Analyse inférentielle pour extrapoler une propriété d'une échantillon à une population
+* Analyse prédictive pour prédire des données futures à partir des données historiques et présentes
+* Analyse causale pour observer une variable en fonction d'une autre
+* Analyse de mécanisme pour comprendre quels effets exacts auront des variables en fonction d'autres
+
+
+
+
+
 # Les données ont des propriétés !
 
 Pour une meilleure compréhension de son travail, un data scientist se doit d'apprécier les propriétés d'un jeu de données. 
