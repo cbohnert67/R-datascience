@@ -103,8 +103,6 @@ Lorsqu'on fait des changements sur un fichier, le système sauvegarde l'historiq
 * Bien renseigner les commit
 * Puller et pusher souvent
 
-
-
 #### Séquence de travail :
 
 1. Effectuer des modifications dans l'espace de travail (script, markdown, etc)
@@ -124,6 +122,14 @@ Lorsqu'on fait des changements sur un fichier, le système sauvegarde l'historiq
 * `git checkout master` = retourne sur la branche maitresse
 * `git pull` = fusionne les modifications dans les branches/dépot de l'utilisateur propriétaire
 * `git push` = 'commit' les modifications locales dans le dépot distant (GitHub)
+
+#### Structure usuelle d'un projet d'analyse statistique avec R :
+
+* docs : documents
+* data : jeux de données
+* images : images
+* scripts : scripts
+* résultats : rapports 
 
 #### Pour approfondir :
 
@@ -166,3 +172,5 @@ Un document RMarkdown peut être converti en fichier pdf et html.
 #### Pour approfondir :
 
 * [Guide Markdown](https://www.markdownguide.org/)
+
+
