@@ -170,9 +170,6 @@ Voici 5 exemples de questions que l'on peut se poser avec ce jeu de données :
 * Analyse de mécanisme pour comprendre quels effets exacts auront des variables en fonction d'autres
 
 
-
-
-
 # Les données ont des propriétés !
 
 Pour une meilleure compréhension de son travail, un data scientist se doit d'apprécier les propriétés d'un jeu de données. 
@@ -194,12 +191,38 @@ Voici une taxonomie des propriétés de la donnée :
 
 #### Données structurées versus données non structurées :
 
-On parle de données structurées lorsqu'elles se présentent sous la forme d'une matrice où les lignes représentent des objets (ou enregistrements) distincts et les colonnes des propriétés de ces objets.
+
+On parle de données structurées lorsqu'elles se présentent sous la forme de tableau où les lignes représentent des objets (ou enregistrements) distincts et les colonnes des propriétés de ces objets.
 
 On parle de données non structurées lorsqu'elles ne se trouvent pas sous cette forme de tableau. 
 
 Les images et liens de Wikipédia sont des données non structurées alors qu'un tableau Excel est un parfait exemple de données structurées. 
 
 #### Données quantitatives versus données catégorielles :
+
+Les données peuvent se trouver sous différentes formes : quantitatives et catégorielles.
+
+Les données sont quantitatives quand elle sont sous la forme numérique.
+
+Elles peuvent être :
+
+* discrètes
+* continues
+
+Elles peuvent être aisément soumises à des calculs et être visualisées.
+
+Les données sont catégorielles quand elles sont sous la forme qualitative.
+
+Elles peuvent être :
+
+* binaire
+* ordinale
+* nominale
+
+Les données catégorielles sont plus difficiles à manipuler que les données quantitatives. Elles peuvent cependant être encodées pour faciliter leur identificatgion.
+
+#### Classification et régression :
+
+
 
 
