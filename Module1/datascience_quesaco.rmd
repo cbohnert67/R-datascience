@@ -69,7 +69,7 @@ La data science est une science propulsée par les données et un bon data scien
 * Un problème étant donnée, quelles données sont disponible pour aider à le résoudre ?
 * Quels problèmes intéressants peut-on résoudre avec un jeu de données spécifique ?
 
-# Poser d'intéressantes questions à partir de données !
+# Poser d'intéressantes questions à partir de données.
 
 Les data scientists se posent toujours des questions et s'intéressent à beaucoup de choses.
 
@@ -170,7 +170,7 @@ Voici 5 exemples de questions que l'on peut se poser avec ce jeu de données :
 * Analyse de mécanisme pour comprendre quels effets exacts auront des variables en fonction d'autres
 
 
-# Les données ont des propriétés !
+# Les données ont des propriétés.
 
 Pour une meilleure compréhension de son travail, un data scientist se doit d'apprécier les propriétés d'un jeu de données. 
 
@@ -223,6 +223,28 @@ Les données catégorielles sont plus difficiles à manipuler que les données q
 
 #### Classification et régression :
 
+Deux types de problèmes se rencontrent souvent en data science : la classificaion et la régression.
 
+* Classification : il s'agit d'associer un label (d'un ensemble fini de labels) à un objet.
+* Régression : il s'agit de prédire une valeur numérique d'une quantité.
 
+*Quelques exemples :*
 
+* Est-ce que le prix d'un cours boursier sera plus bas ou plus haut demain ? (classificaion)
+* Quel sera le prix d'un cours boursier demain ? (régression)
+* Est-ce qu'une personne donnée est à risque pour une assurance ? (classification)
+* Combien de temps peut vivre une personne ? (régression)
+
+*A vous de jouer !* Gardez un oeil ouvert sur les types de problèmes rencontrés dans votre vie quotidienne et/ou professionnelle.
+
+# Quelques projets de data science.
+
+Steven Skiena a proposé des projets de prédiction à ses étudiants de la promotion de 2014.
+
+Il s'agissait de prédire quelque chose et de se confronter à la réalité.
+
+Pour cela, les étudiants devaient partir de zéro : trouver les jeux données, construire leur environnement d'évaluation, et construire leur modèles.
+
+On pourra visualiser les vidéos des projets pour s'imprégner de la démarche du data scientist : [www.quant-shop.com](http://www.quant-shop.com).
+
+D'autres sources de projets se trouvent sur [www.kaggle.com](http://www.kaggle.com).
